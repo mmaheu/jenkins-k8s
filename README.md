@@ -36,7 +36,7 @@ You can run your container locally, if you have Docker installed
 - Using the pre-built image
 ```bash
 # Run the container you built before
-$ docker run -d --name jenkins -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock eldada-docker-examples.bintray.io/jenkins:lts-k8s
+$ docker run -d --name jenkins -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock docker.io/mmaheu/jenkins:lts-k8s
 
 ```
 
@@ -49,7 +49,7 @@ $ docker run -d --name jenkins -p 8080:8080 -v /var/run/docker.sock:/var/run/doc
 - Browse to http://localhost:8080 on your local browser
 
 ### Deploy Jenkins helm chart to Kubernetes
-If you are using the pre-built image `eldada-docker-examples.bintray.io/jenkins:lts-k8s`, you can install the helm chart with
+If you are using the pre-built image `docker.io/mmaheu/jenkins:lts-k8s`, you can install the helm chart with
 ```bash
 # Deploy the Jenkins helm chart
 # (same command for install and upgrade)
