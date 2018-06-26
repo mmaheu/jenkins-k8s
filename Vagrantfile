@@ -29,6 +29,6 @@ Vagrant.configure("2") do |config|
     curl -sSL https://get.docker.com/ | sh
     service docker start
 
-    usermod -aG docker ubuntu
+    usermod -aG docker vagrant
   SHELL
 end
